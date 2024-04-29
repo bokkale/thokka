@@ -29,12 +29,12 @@ jobs:
         name: "Code Review"
         id: review
         with:
-          apiKey: "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"
+          apiKey: "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"
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           githubRepository: ${{ github.repository }}
           githubPullRequestNumber: ${{ github.event.pull_request.number }}
           gitCommitHash: ${{ github.event.pull_request.head.sha }}
-          repoId: "codellama/CodeLlama-34b-Instruct-hf"
+          repoId: "meta-llama/Llama-2-7b-chat-hf"
           temperature: "0.2"
           maxNewTokens: "250"
           topK: "50"
